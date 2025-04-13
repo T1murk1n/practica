@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,10 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="javascript:void(0);" class="menu__link">главная</a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link">главная</a></li>
                         <li class="menu__item"><a href="main.html" class="menu__link">о нас</a></li>
                         <li class="menu__item"><a href="staff.html" class="menu__link">сотрудники</a></li>
-                        <li class="menu__item"><a href="reviews.html" class="menu__link">отзывы</a></li>
+                        <li class="menu__item"><a href="javascript:void(0);" class="menu__link">отзывы</a></li>
                         <li class="menu__item"><a href="services.html" class="menu__link">услуги</a></li>
                     </ul>
                 </nav>
@@ -32,7 +32,6 @@
     </header>
 
 
-
     <section class="hero">
         <div class="hero__wrap">
             <div class="wrap__text-block">
@@ -40,35 +39,14 @@
                 <p class="hero__description">
                     Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
                 </p>
-                <div class="wrap__row">
-                    <a href="#" class="menu__btn-signup">записаться</a>
-                    <a href="#" class="menu__btn-detailed">подробнее</a>
+                <div class="wrap__row wrap__row_col">
+                    <input class="wrap__input" placeholder="Введите что-нибудь..."  type="text">
+                    <a href="#" class="menu__btn-detailed">оставить отзыв</a>
                 </div>
             </div>
             <div class="wrap__img"></div>
         </div>
     </section>
-
-
-    <section class="staff" id="staff">
-        <div class="staff__container">
-            <h2 class="staff__title title">// сотрудники</h2>
-            <div class="slider">
-                <div class="slider__track">
-                  <div class="slide"></div>
-                  <div class="slide"></div>
-                  <div class="slide"></div>
-                  <div class="slide"></div>
-                  <div class="slide"></div>
-                </div>
-              </div>
-              <div class="slider__controls">
-                <button class="slider__btn prev">←</button>
-                <button class="slider__btn next">→</button>
-              </div>
-    </section>
-
-
     <section class="reviews" id="reviews">
         <div class="reviews__container">
             <h2 class="reviews__title title">// отзывы</h2>
@@ -121,57 +99,7 @@
     </section>
 
 
-    <section class="services" id="services">
-        <div class="services__container">
-            <h2 class="services__title title">// УСЛУГИ</h2>
-            <div class="services__grid">
-              <div class="service">
-                <div class="service__header">
-                  <span>01 Депиляция</span>
-                  <button class="toggle-btn">+</button>
-                </div>
-                <div class="service__content">
-                  <p>Подробное описание услуги депиляции...</p>
-                </div>
-              </div>
-          
-              <div class="service">
-                <div class="service__header">
-                  <span>02 Массажи</span>
-                  <button class="toggle-btn">+</button>
-                </div>
-                <div class="service__content">
-                  <p>Подробное описание услуги массажа...</p>
-                </div>
-              </div>
-          
-              <div class="service">
-                <div class="service__header">
-                  <span>03 Лазерная эпиляция</span>
-                  <button class="toggle-btn">+</button>
-                </div>
-                <div class="service__content">
-                  <p>Подробное описание лазерной эпиляции...</p>
-                  <p>Подробное описание лазерной эпиляции...</p>
-                  <p>Подробное описание лазерной эпиляции...</p>
-                  <p>Подробное описание лазерной эпиляции...</p>
-                </div>
-              </div>
-          
-              <div class="service">
-                <div class="service__header">
-                  <span>04 Косметология</span>
-                  <button class="toggle-btn">+</button>
-                </div>
-                <div class="service__content">
-                  <p>Подробное описание косметологических процедур...</p>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section>
-
-    <footer class="footer">
+    <footer style="margin-top: 100px;" class="footer">
         <div class="footer__bottom__container">
             <div class="footer__top">
                 <div class="footer__column">
@@ -222,7 +150,6 @@
       <a id="scrollToTop" class="scroll-to-top"></a>
 
     <script src="js/script.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/services.js"></script>
+    <script src="js/slider_2.js"></script>
 </body>
 </html>
