@@ -165,6 +165,7 @@ border: ;-color: #2692ff;
 .review-card__text h3 {
   margin: 0 0 5px;
   font-size: 20px;
+  font-family: 'uncage';
 }
 .stars {
   font-size: 18px;
