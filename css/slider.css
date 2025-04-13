@@ -1,6 +1,6 @@
 .slider {
 	overflow: hidden;
-  }
+}
   
   .slider__track {
 	display: flex;
@@ -55,17 +55,14 @@
   .slider__track_2 {
 	display: flex;
 	transition: transform 0.5s ease;
-	gap: 80px;
-  }
-  .slider-2__track {
-	gap: 80px;
+	gap: 30px;
   }
 
   .review-card {
 	background: #f2f2f2;
 	border-radius: 8px;
 	padding: 20px;
-	min-width: calc((100% - 80px) / 2);
+	min-width: calc((100% - 30px) / 2);
 	box-sizing: border-box;
 	border: 2px solid transparent;
   }
@@ -80,14 +77,15 @@
   }
 
   .review-card__image {
-	width: 120px;
-	height: 180px;
+	flex: 1 1 50%;
 	background: #d3d3d3;
 	flex-shrink: 0;
   }
 
   .review-card__text {
-	flex: 1;
+	flex: 1 1 50%;
+	height: 100%;
+	gap: 8px;
 	display: flex;
 	flex-direction: column;
   }
@@ -110,13 +108,97 @@
   }
 
   .review-card__btn {
-	margin-top: auto;
+	margin-top: 8px;
 	padding: 6px 12px;
 	background: #ddd;
 	border: none;
 	cursor: pointer;
 	border-radius: 4px;
 	align-self: start;
+  }
+
+
+
+  .icon-menu {
+    display: none;
+    width: 35px;
+    height: 25px;
+    position: relative;
+	cursor: pointer;
+}
+.icon-menu span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.5s ease 0s;
+}
+.icon-menu span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+.icon-menu span:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.icon-menu span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.header__menu {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+  @media (max-width: 1166px) {
+	.review-card {
+	  min-width: 100%;
+	}
+  
+	.slider__track_2 {
+	  gap: 20px;
+	}
+	.slide {
+		min-width: calc((100% - 80px) / 2); /* 1 gap */
+	}
+	.wrap__text-block {
+		padding-left: 2%;
+	}
+	.hero__title {
+		font-size: 60px;
+	}
+	.hero__description {
+		font-size: 18px;
+	}
+  }
+
+  @media (max-width: 948px) {
+	.hero__wrap {
+		gap: 15px;
+	}
+	.wrap__text-block {
+		/* flex: 1 1 200px; */
+		max-width: 300px;
+	}
+	.wrap__img {
+		flex: 1 1 auto;
+	}
+	.wrap__row {
+		flex-direction: column;
+	}
+	.menu__list {
+		gap: 30px;
+	}
+	.menu__link {
+		font-size: 20px;
+	}
+	.menu__btn-signup {
+		font-size: 20px;
+	}
   }
 
   @media (max-width: 768px) {
@@ -127,4 +209,107 @@
 	.slider-1__track {
 	  gap: 40px;
 	}
+	.slide {
+		min-width: 100%;
+	}
+	.icon-menu {
+		display: block;
+	}
+	.menu__body {
+		margin-top: 5px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: #f2f2f2;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
+	}
+	.menu__body .menu__list {
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px;
+	}
+	.menu__body .menu__link {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.menu__body .menu__item {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.menu__body._active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+  
+  @media (max-width: 674px) {
+	.review-card__content {
+		flex-direction: column;
+	}
+	.review-card__image {
+		display: none;
+	}
+	.hero__wrap {
+		flex-direction: column;
+	}
+	.wrap__text-block {
+		flex: 1 1 auto;
+		min-width: 100%;
+	}
+	.wrap__text-block {
+		padding-left: 0;
+		padding: 15px;
+	}
+	.wrap__row {
+		flex-direction: row;
+		
+	}
   }
+  @media (max-width: 488px) {
+	.wrap__row {
+		flex-direction: column;
+	}
+  }
+
+
+
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main); /* Зеленый цвет */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    transform: rotate(45deg);
+    margin-bottom: -6px;
+}
+
+.scroll-to-top:hover {
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+}

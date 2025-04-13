@@ -1,57 +1,137 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.slider__track');
-    const slides = document.querySelectorAll('.slide');
-    const prevBtn = document.querySelector('.slider__btn.prev');
-    const nextBtn = document.querySelector('.slider__btn.next');
+  // === Слайдер 1 (основной) ===
+  const track1 = document.querySelector('.slider__track');
+  const slides1 = document.querySelectorAll('.slide');
+  const prevBtn1 = document.querySelector('.slider__btn.prev');
+  const nextBtn1 = document.querySelector('.slider__btn.next');
+  let currentSlide1 = 0;
 
-    let currentSlide = 0;
+  function getSlideData1() {
+    const slideWidth = slides1[0].offsetWidth + 80;
+    const visibleArea = document.querySelector('.slider').offsetWidth;
+    const trackWidth = slideWidth * slides1.length;
+    const maxOffset = trackWidth - visibleArea;
+    return { slideWidth, maxOffset };
+  }
 
-    function getSlideData() {
-      const slideWidth = slides[0].offsetWidth + 80; // 20px — gap между карточками
-      const visibleArea = document.querySelector('.slider').offsetWidth;
-      const trackWidth = slideWidth * slides.length;
-      const maxOffset = trackWidth - visibleArea;
-      return { slideWidth, maxOffset };
+  function updateSlider1() {
+    const { slideWidth, maxOffset } = getSlideData1();
+    let offset = slideWidth * currentSlide1;
+
+    if (offset > maxOffset) {
+      offset = maxOffset;
+      currentSlide1 = Math.floor(offset / slideWidth);
     }
 
-    function updateSlider() {
-      const { slideWidth, maxOffset } = getSlideData();
-      let offset = slideWidth * currentSlide;
+    track1.style.transform = `translateX(-${offset}px)`;
+  }
 
-      // если уходим дальше, чем можем — фиксируем
-      if (offset > maxOffset) {
-        offset = maxOffset;
-        currentSlide = Math.floor(offset / slideWidth);
-      }
+  nextBtn1?.addEventListener('click', () => {
+    currentSlide1++;
+    updateSlider1();
+  });
 
-      track.style.transform = `translateX(-${offset}px)`;
+  prevBtn1?.addEventListener('click', () => {
+    if (currentSlide1 > 0) {
+      currentSlide1--;
+      updateSlider1();
+    }
+  });
+
+  window.addEventListener('resize', updateSlider1);
+  updateSlider1();
+
+
+  // === Слайдер 2 (отзывы) ===
+  const track2 = document.querySelector('.slider__track_2');
+  const slides2 = document.querySelectorAll('.review-card');
+  const prevBtn2 = document.querySelector('.slider__btn.prev2');
+  const nextBtn2 = document.querySelector('.slider__btn.next2');
+  let currentSlide2 = 0;
+
+  function getSlideData2() {
+    const slideWidth = slides2[0].offsetWidth + 30;
+    const visibleArea = document.querySelector('.slider2').offsetWidth;
+    const trackWidth = slideWidth * slides2.length;
+    const maxOffset = trackWidth - visibleArea;
+    return { slideWidth, maxOffset };
+  }
+
+  function updateSlider2() {
+    const { slideWidth, maxOffset } = getSlideData2();
+    let offset = slideWidth * currentSlide2;
+
+    if (offset > maxOffset) {
+      offset = maxOffset;
+      currentSlide2 = Math.floor(offset / slideWidth);
     }
 
-    nextBtn.addEventListener('click', () => {
-      currentSlide++;
-      updateSlider();
-    });
+    track2.style.transform = `translateX(-${offset}px)`;
+  }
 
-    prevBtn.addEventListener('click', () => {
-      if (currentSlide > 0) {
-        currentSlide--;
-        updateSlider();
-      }
-    });
+  nextBtn2?.addEventListener('click', () => {
+    currentSlide2++;
+    updateSlider2();
+  });
 
-    window.addEventListener('resize', () => {
-      updateSlider();
-    });
+  prevBtn2?.addEventListener('click', () => {
+    if (currentSlide2 > 0) {
+      currentSlide2--;
+      updateSlider2();
+    }
+  });
 
-    updateSlider(); // инициализация
-
-
+  window.addEventListener('resize', updateSlider2);
+  updateSlider2();
 
 
-    document.querySelectorAll('.service').forEach(service => {
-      const btn = service.querySelector('.toggle-btn');
-      btn.addEventListener('click', () => {
-        service.classList.toggle('open');
-      });
+  // === Кнопки раскрытия услуг ===
+  document.querySelectorAll('.service').forEach(service => {
+    const btn = service.querySelector('.toggle-btn');
+    btn.addEventListener('click', () => {
+      service.classList.toggle('open');
     });
   });
+
+  
+
+
+
+
+
+
+  // Получаем кнопку "Вверх" по её ID
+  const scrollToTopButton = document.getElementById("scrollToTop");
+
+  window.addEventListener("scroll", function () {
+      if (window.scrollY > 200) {
+          scrollToTopButton.classList.add("show");
+      } else {
+          scrollToTopButton.classList.remove("show");
+      }
+  });
+
+  scrollToTopButton.addEventListener("click", function () {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  });
+
+
+
+
+
+
+
+  let el_btn = document.querySelector(".icon-menu");
+  let el_menu = document.querySelector(".menu__body");
+  if(el_btn && el_menu) {
+      el_btn.addEventListener('click', () => {
+          el_btn.classList.toggle('_active');
+          el_menu.classList.toggle("_active");
+      });
+  }
+
+
+});
