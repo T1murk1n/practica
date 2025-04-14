@@ -1,0 +1,204 @@
+.hero {
+    background-color: #F8F4E8;
+    color: #7B956B;
+}
+.hero__description {
+    color: #7B956B;
+}
+.menu__btn-signup {
+    color: #FFFFFF;
+    border: none;
+    background-color: #849F7A;
+}
+.menu__btn-signup:hover {
+    color: #FFFFFF;
+    border: none;
+    background-color: #849F7A;
+}
+.menu__btn-signup-top {
+    color: #7B956B;
+    background-color: #dcf1d5;
+    box-shadow: 0px 4px 12px rgba(132, 159, 122, 0.1);
+}
+.menu__btn-signup-top:hover {
+    color: #FFFFFF;
+    border: none;
+    background-color: #849F7A;
+}
+.menu__btn-detailed {
+    background-color: transparent;
+    color: #7B956B;
+    border-color: #7B956B;
+    transition: all 0.5s ease;
+}
+.menu__btn-detailed:hover {
+    background-color: #849F7A;
+    color: #FFFFFF;
+}
+header{
+    background-color: #DCEBD8;
+    color: #7B956B !important;
+}
+.menu__link {
+    color: #7B956B !important;
+}
+
+.staff {
+    background-color: #F8F4E8;
+}
+
+.title {
+    color: #849F7A;
+}
+.slider__btn {
+    color: #849F7A;
+    border-color: #849F7A;
+}
+
+.slide {
+    position: relative;
+    box-shadow: rgba(132, 159, 122, 0.1);
+}
+.slide:nth-child(1) {
+    background-image: url(../img/s1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+.slide:nth-child(2) {
+    background-image: url(../img/s2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+.slide:nth-child(3) {
+    background-image: url(../img/s3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+.slide span{
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 150;
+    color: transparent;
+    transition: all 0.5s ease;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.slide:hover span{
+    color: #fff;
+}
+.wrap__img {
+    background-image: url(../img/hero.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 46%;
+}
+
+.reviews {
+    background-color: #F8F4E8;
+}
+.review-card {
+    background-color: #F2F6EF;
+    box-shadow: 0px 4px 12px rgba(132, 159, 122, 0.1);
+}
+.prev2, .next2 {
+    border-color: #849F7A;
+    color: #849F7A;
+}
+.stars {
+    color: #F2D88C;
+}
+.review-card__text h3, .review-card__date {
+    color: #7B956B !important;
+}
+.review-card__text h3 {
+    color: #4F4F4F;
+}
+.review-card__btn {
+    background-color: #F9F6F0;
+}
+.scroll-to-top {
+    background-color: #8fa387;
+}
+.scroll-to-top:hover {
+    background-color: #849F7A;
+}
+.review-card__image:nth-child(1) {
+    background-image: url(../img/r1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.review-card__image:nth-child(2) {
+    background-image: url(../img/r2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.review-card__image:nth-child(3) {
+    background-image: url(../img/r3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.services {
+    background-color: #F8F4E8;
+}
+.service__header span {
+    color: #7B956B;
+}
+.service__header button {
+    color: #849F7A;
+}
+.service__header button:hover {
+    color: #6D8A63;
+}
+.service {
+    border-top: 1px solid #E1E6DD;
+    border-bottom: 1px solid #E1E6DD;
+}
+.service__content p {
+    color: #6A6A6A;
+}
+.footer {
+    background-color: #E9EFE4;
+    color: #7B956B;
+}
+.footer a{
+    color: #7B956B;
+}
+.footer a:hover{
+    color: #849F7A;
+}
+.footer__bottom, .footer__bottom a {
+    color: #A5B3A0;
+}
+.footer__column .footer__form input {
+    background-color: #FAF9F5;
+    border: 1px solid #D6E0D0;
+    color: #4F4F4F;
+}
+.footer__column .footer__form button {
+    background-color: #849F7A;
+    color: #fff;
+}
+.footer__column .footer__form button:hover {
+    background-color: #6D8A63;
+    color: #fff;
+}
+.footer__socials a img {
+    color: #849F7A;
+}
+.footer__logo {
+    background-color: #849F7A;
+}
+@media (max-width: 768px) {
+    .menu__body .menu__list {
+        background-color: #F8F4E8;
+    }
+}
