@@ -18,6 +18,10 @@
 	.hero__description {
 		font-size: 18px;
 	}
+	.row {
+		flex-direction: column;
+		gap: 5px;
+	}
 }
 
 @media (max-width: 948px) {
@@ -53,7 +57,10 @@
 	.review-card {
 	  min-width: 100%;
 	}
-
+	.row {
+		flex-direction: row;
+		gap: 25px;
+	}
 	.slider-1__track {
 	  gap: 40px;
 	}

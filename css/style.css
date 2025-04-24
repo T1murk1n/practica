@@ -144,11 +144,25 @@ cursor: pointer;
   left: 0;
 }
 
+.icon-menu._active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.icon-menu._active span:nth-child(2) {
+  transform: translateX(-40px);
+  opacity: 0;
+  overflow: hidden;
+}
+.icon-menu._active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -10px);
+}
+._active {
+  transform: translateX(0);
+}
 .header__menu {
-position: relative;
-top: 0;
-left: 0;
-z-index: 100;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 /*=====================*/
 
