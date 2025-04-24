@@ -233,13 +233,13 @@ border: ;-color: #2692ff;
 }
 .service__content {
   margin-top: 10px;
-  display: none;
+  /* display: none; */
   font-size: 15px;
   color: #444;
   transition: all 0.6s ease;
 }
 .service.open .service__content {
-  display: block;
+  /* display: block; */
 }
 .service.open .toggle-btn {
   transform: rotate(45deg);
@@ -251,6 +251,16 @@ border: ;-color: #2692ff;
 }
 .service__content p {
   padding: 5px 0;
+}
+.service__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, padding 0.9s ease;
+  padding: 0 0;
+}
+.service.open .service__content {
+  max-height: 1000px;
+  padding: 10px 0;
 }
 /*=====================*/
 

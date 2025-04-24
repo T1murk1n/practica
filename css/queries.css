@@ -90,6 +90,9 @@
 	.menu__body._active {
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	}
+	.menu__body .menu__list {
+        background-color: #F8F4E8;
+    }
 }
   
 @media (max-width: 674px) {
