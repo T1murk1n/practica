@@ -1,5 +1,5 @@
 .hero {
-    background-color: #F8F4E8;
+    background-color: #FDFFF5;
     color: #7B956B;
 }
 .hero__description {
@@ -16,8 +16,8 @@
     background-color: #849F7A;
 }
 .menu__btn-signup-top {
-    color: #7B956B;
-    background-color: #dcf1d5;
+    color: #000;
+    background-color: #FFDC5D;
     box-shadow: 0px 4px 12px rgba(132, 159, 122, 0.1);
 }
 .menu__btn-signup-top:hover {
@@ -36,15 +36,15 @@
     color: #FFFFFF;
 }
 header{
-    background-color: #DCEBD8;
-    color: #7B956B !important;
+    background-color: #8FA888;
+    color: #fff !important;
 }
 .menu__link {
-    color: #7B956B !important;
+    color: #fff !important;
 }
 
 .staff {
-    background-color: #F8F4E8;
+    background-color: #FDFFF5;
 }
 
 .title {
@@ -112,7 +112,8 @@ header{
 }
 
 .reviews {
-    background-color: #F8F4E8;
+    background-color: #FDFFF5;
+    padding-bottom: 125px;
 }
 .review-card {
     background-color: #F2F6EF;
@@ -132,7 +133,7 @@ header{
     color: #4F4F4F;
 }
 .review-card__btn {
-    background-color: #F9F6F0;
+    background-color: #FFDC5D;
 }
 .scroll-to-top {
     background-color: #8fa387;
@@ -159,7 +160,7 @@ header{
     background-position: 50% 50%;
 }
 .services {
-    background-color: #F8F4E8;
+    background-color: #FDFFF5;
 }
 .service__header span {
     color: #7B956B;
@@ -196,21 +197,37 @@ header{
     color: #4F4F4F;
 }
 .footer__column .footer__form button {
-    background-color: #849F7A;
-    color: #fff;
+    background-color: #FFDC5D;
+    color: #000;
 }
 .footer__column .footer__form button:hover {
     background-color: #6D8A63;
     color: #fff;
 }
 .footer__socials a img {
-    color: #849F7A;
+    color: #FFDC5D;
 }
-.footer__logo {
+/* .footer__logo {
     background-color: #849F7A;
-}
+} */
 
 .row {
     display: flex;
     align-items: center;
 }
+.plash {
+    width: 100%;
+    height: 36%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.5s ease;
+}
+.slide:hover .plash {
+    background-color: #6a6a6aa1;
+}
+.service__header {
+    cursor: pointer;
+  }

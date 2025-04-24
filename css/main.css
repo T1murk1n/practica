@@ -39,11 +39,14 @@
 .hero__title {
   font-family: UNCAGE;
   font-weight: 400;
-  font-size: 83px;
+  font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
   width: 100%;
 }
+/* .hero__title span {
+  font-size:40px;
+} */
 .hero__description {
   font-family: Rubik;
   font-weight: 300;
@@ -78,7 +81,7 @@
 
 /*======= staff =======*/
 .staff__title {
-  padding: 225px 0 56px 0;
+  padding: 125px 0 56px 0;
 }
 .slider {
 	overflow: hidden;
@@ -125,7 +128,7 @@
 
 /*======= reviews =======*/
 .reviews__title {
-  padding: 225px 0 56px 0;
+  padding: 125px 0 56px 0;
 }
 .slider2 {
   overflow: hidden;
@@ -190,7 +193,7 @@ border: ;-color: #2692ff;
 
 /*======= services =======*/
 .services {
-  padding: 156px 0;
+  padding: 56px 0;
 }
 .services__title {
   padding: 56px 0;
@@ -245,28 +248,74 @@ border: ;-color: #2692ff;
   transform: rotate(45deg);
 }
 .service__content span {
-  color: #000 !important;
-  font-weight: 600;
+  color: #000;
   margin-left: 16px;
 }
 .service__content p {
   padding: 5px 0;
 }
+
+
 .service__content {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.9s ease, padding 0.9s ease;
+  transition: height 0.5s ease, padding 0.5s ease;
   padding: 0 0;
 }
-.service.open .service__content {
-  max-height: 1000px;
+.service__content.opening,
+.service__content.closing {
+  display: block;
+}
+.service__content.active {
   padding: 10px 0;
+}
+.wrap-services-area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.area-text__content {
+  font-family: 'rubik';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase; 
+  text-align: center;
+  padding: 25px;
+  font-weight: 500;
+  margin: 50px 0;
+  color: #000 !important;
+  background-color: #FFDC5D !important;
+}
+.service-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  color: #444;
+  word-break: break-word;
+}
+
+.service-line .description {
+  flex: 1 1 auto;
+  min-width: 0;
+  color: #6A6A6A;
+}
+
+.service-line .price {
+  white-space: nowrap;
+  color: #000;
+  margin-left: 16px;
+  text-align: right;
 }
 /*=====================*/
 
 /*======= works =======*/
 .section__works {
   padding: 100px 0;
+  background-color: #FDFFF5;
 }
 .works__title {
   padding-bottom: 56px;
@@ -281,7 +330,71 @@ border: ;-color: #2692ff;
 .photo {
   width: 100%;
   height: 274px;
-  background-color: var(--main);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.works__wrap  .photo:nth-child(1) {
+  background-image: url(../img/w1.jpg);
+}
+.works__wrap  .photo:nth-child(2) {
+  background-image: url(../img/w2.jpg);
+}
+.works__wrap  .photo:nth-child(3) {
+  background-image: url(../img/w3.jpg);
+}
+.works__wrap  .photo:nth-child(4) {
+  background-image: url(../img/w4.jpg);
+}
+.works__wrap  .photo:nth-child(5) {
+  background-image: url(../img/w5.jpg);
+}
+.works__wrap  .photo:nth-child(6) {
+  background-image: url(../img/w6.jpg);
+}
+/*=====================*/
+
+/*======= atelier =======*/
+.section__atelier {
+  padding: 100px 0;
+  background-color: #FDFFF5;
+}
+.atelier__title {
+  padding-bottom: 56px;
+}
+.atelier__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 31px;
+  column-gap: 20px;
+}
+.photo {
+  width: 100%;
+  height: 274px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.atelier__wrap .photo:nth-child(1) {
+  background-image: url(../img/a1.jpg);
+}
+.atelier__wrap .photo:nth-child(2) {
+  background-image: url(../img/a2.jpg);
+}
+.atelier__wrap .photo:nth-child(3) {
+  background-image: url(../img/a3.jpg);
+}
+.atelier__wrap .photo:nth-child(4) {
+  background-image: url(../img/a4.jpg);
+}
+.atelier__wrap .photo:nth-child(5) {
+  background-image: url(../img/a5.jpg);
+}
+.atelier__wrap .photo:nth-child(6) {
+  background-image: url(../img/a6.jpg);
+  background-position: 50% 75%;
 }
 /*=====================*/
 

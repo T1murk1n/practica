@@ -76,7 +76,7 @@
 		top: 100%;
 		left: 0;
 		width: 100%;
-		background-color: #f2f2f2;
+		background-color: #8FA888;
 		clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
 	}
 	.menu__body .menu__list {
@@ -98,7 +98,7 @@
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	}
 	.menu__body .menu__list {
-        background-color: #F8F4E8;
+        background-color: #8FA888;
     }
 }
   
