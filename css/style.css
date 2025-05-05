@@ -53,6 +53,11 @@ a[class$="__link"] {
 /*======= header =======*/
 header {
   padding: 35px 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .header__menu {
   display: flex;
@@ -285,4 +290,61 @@ cursor: pointer;
 /*=====================*/
 .decoaration {
   color: #999;
+}
+
+.icon-menu {
+  display: block;
+}
+.menu__body {
+  margin-top: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #8FA888;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
+}
+.menu__body._active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.menu__body .menu__list {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.menu__body .menu__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.menu__body .menu__item {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.header__menu .row .footer__column p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.header__menu .row .footer__column p img{
+  width: 24px;
+  height: 24px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+button, a {
+  cursor: pointer;
+}
+.feedback-survey {
+  background-image: url(../img/opros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 50%;
 }

@@ -57,6 +57,12 @@
 	.review-card {
 	  min-width: 100%;
 	}
+	.header__center {
+		display: none;
+	}
+	.header__menu  .row .footer__column p {
+		display: none;
+	}
 	.row {
 		flex-direction: row;
 		gap: 25px;
@@ -164,5 +170,8 @@
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-template-columns: 1fr;
 		row-gap: 20px;
-	  }
+	}
+	.menu__btn-signup.menu__btn-signup-top {
+		display: none;
+	}
 }
