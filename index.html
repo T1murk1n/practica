@@ -12,39 +12,42 @@
 </head>
 <body>
     <header>
+      <div class="header_">
         <div class="header__container">
-            <div class="header__menu menu">
-                <div class="footer__logo"></div>
-                <div class="header__center">
-                  <p>Деятельность</p>
-                  <p>Локация</p>
+          <div class="header__menu menu">
+              <div class="footer__logo"></div>
+              <div class="header__center">
+                <p>Красота. Уход. Гармония.</p>
+                <p>Москва, г. Зеленоград</p>
+              </div>
+              <nav class="menu__body">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a href="javascript:void(0);" class="menu__link">главная</a></li>
+                    <li class="menu__item"><a href="#staff" class="menu__link">сотрудники</a></li>
+                    <li class="menu__item"><a href="#reviews" class="menu__link">отзывы</a></li>
+                    <li class="menu__item"><a href="#services" class="menu__link">услуги</a></li>
+                  </ul>
+              </nav>
+              <div class="row">
+                <button type="button" class="menu__icon icon-menu btn-reset">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button>
+              <div class="row">
+                
+                <a href="#" class="menu__btn-signup menu__btn-signup-top">онлайн-запись</a>
+                <div class="footer__column">
+                  <p><img src="./img/icons/phone.png">+7 (123) 456 78-91</p>
                 </div>
-                <nav class="menu__body">
-                    <ul class="menu__list">
-                      <li class="menu__item"><a href="javascript:void(0);" class="menu__link">главная</a></li>
-                      <li class="menu__item"><a href="#staff" class="menu__link">сотрудники</a></li>
-                      <li class="menu__item"><a href="#reviews" class="menu__link">отзывы</a></li>
-                      <li class="menu__item"><a href="#services" class="menu__link">услуги</a></li>
-                    </ul>
-                </nav>
-                <div class="row">
-                  <button type="button" class="menu__icon icon-menu btn-reset">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="row">
-                  
-                  <a href="#" class="menu__btn-signup menu__btn-signup-top">онлайн-запись</a>
-                  <div class="footer__column">
-                    <p><img src="./img/icons/phone.png">+7 (123) 456 78-91</p>
-                  </div>
-                </div>
-                </div>
+              </div>
+              </div>
 
 
-            </div>
-        </div>
+          </div>
+      </div>
+      </div>
+
     </header>
 
 
@@ -53,21 +56,30 @@
         <div class="hero__wrap">
             <div class="wrap__text-block">
                 <h1 class="hero__title">Красота — это отражение тебя настоящей.</h1>
-                <p class="hero__description">
-                  
-
-                  В нашем салоне ты не просто получаешь услугу — ты проживаешь момент, наполненный заботой, эстетикой и вниманием.
-                  <br><br>
-                  Мы создаём атмосферу, в которой каждая женщина может почувствовать себя особенной: расслабиться, восстановиться, сиять.
-                  <br><br>
-                  Мы рядом, чтобы напомнить тебе: ты — прекрасна. Уже. Всегда.
-                </p>
+                <div class="hero__description">
+                  <p>В La Estetic мы создаем пространство, где каждая женщина может почувствовать себя прекрасной, уверенной и обновленной.</p>
+                  <p>Мы предлагаем:</p>
+                  <p>Ритуалы красоты для души и тела: от ухода за кожей до преображения волос - полное расслабление и восхитительный результат! Индивидуальный подход к каждой детали: мы подчеркнем вашу уникальность и поможем раскрыть ваш внутренний свет. Доверие и забота: наши опытные специалисты создадут комфортную атмосферу, где вы сможете расслабиться и наслаждаться процессом. Специальное предложение для вас, прекрасные женщины!</p>
+                  <p>При первом посещении - скидка 25% на любую услугу и бесплатная консультация стилиста!</p>
+                  <p>Не откладывайте свою красоту на потом! Запишитесь прямо сейчас и почувствуйте себя королевой!</p>
+                </div>
                 <div class="wrap__row">
                     <a href="#" class="menu__btn-signup">записаться</a>
                     <a href="#" class="menu__btn-detailed">подробнее</a>
                 </div>
             </div>
-            <div class="wrap__img"></div>
+            <div class="wrap__img">
+              <div class="survey-wrapper hero-survey">
+                <form action="#" class="survey-col">
+                  <p class="survey__descr">Заполните форму обратной связи прямо сейчас, и мы сделаем вашу красоту нашей заботой! </p>
+                  <input class="input-shadow" type="text" placeholder="Ваше имя">
+                  <input type="text" class="mask-phone form-control input-shadow" placeholder="Номер телефона">
+                  <textarea class="textarea-shadow" placeholder="Ваше сообщение" name="" id=""></textarea>
+                  <button type="submit" class="menu__btn-signup menu__btn-signup-top">Отправить</button>
+                  <p class="survey-subdescr">Нажимая кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
+                </form>
+              </div>
+            </div>
         </div>
     </section>
 
@@ -511,5 +523,11 @@
     <script src="js/services.js"></script>
     <script src="js/questions.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script>
+      $('.mask-phone').mask('+7 (999) 999-99-99');
+      </script>
 </body>
 </html>

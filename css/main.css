@@ -931,3 +931,63 @@
   font-weight: 500;
   padding: 15px 0;
 }
+.hero-survey {
+  max-width: 80%;
+  height: 80%;
+}
+.survey-col {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: center;
+  font-family: Rubik;
+}
+.survey-col .survey__descr{
+  color: #000;
+  font-weight: 700;
+}
+.survey-col .survey-subdescr {
+  color: #000;
+  max-width: 80%;
+  text-align: center;
+}
+
+.survey-col textarea {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 115px;
+}
+.survey-col button.menu__btn-signup.menu__btn-signup-top {
+  font-weight: 200;
+  width: 100%;
+}
+.input-shadow {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.input-shadow:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+.textarea-shadow {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s;
+  resize: vertical; /* Позволяет изменять высоту только вертикально */
+  min-height: 100px; /* Минимальная высота */
+}
+
+.textarea-shadow:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
