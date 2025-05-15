@@ -87,19 +87,31 @@
 	overflow: hidden;
 }
 .slide:nth-child(1) {
-  background-image: url(../img/s1.JPG);
+  background-image: url(../img/s4.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(2) {
-  background-image: url(../img/s2.JPG);
+  background-image: url(../img/s5.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(3) {
-  background-image: url(../img/s3.JPG);
+  background-image: url(../img/s6.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 25%;
+}
+.slide:nth-child(4) {
+  background-image: url(../img/s7.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 25%;
+}
+.slide:nth-child(5) {
+  background-image: url(../img/s2.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
@@ -345,7 +357,7 @@
 .service-line {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   font-size: 15px;
   color: #444;
@@ -393,15 +405,18 @@
 }
 .works__wrap  .photo:nth-child(2) {
   background-image: url(../img/w2.jpg);
+  background-position: 50% 70%;
 }
 .works__wrap  .photo:nth-child(3) {
   background-image: url(../img/w3.jpg);
 }
 .works__wrap  .photo:nth-child(4) {
   background-image: url(../img/w4.jpg);
+  background-position: 50% 70%;
 }
 .works__wrap  .photo:nth-child(5) {
   background-image: url(../img/w5.jpg);
+  background-position: 50% 70%;
 }
 .works__wrap  .photo:nth-child(6) {
   background-image: url(../img/w6.jpg);
@@ -485,39 +500,40 @@
   letter-spacing: 0%;
 }
 .equipment__wrap .photo:nth-child(1) {
-  background-image: url(../img/a1.jpg);
+  background-image: url(../img/o1.jpg);
   grid-column: span 2;
   grid-row: span 1;
-  background-position: 50% 15%;
+  background-position: 50% 11%;
   height: 100%;
 }
 .equipment__wrap .photo:nth-child(2) {
-  background-image: url(../img/a2.jpg);
+  background-image: url(../img/o2.jpg);
   grid-column: span 1;
   grid-row: span 2;
   height: 100%;
 }
 .equipment__wrap .photo:nth-child(3) {
-  background-image: url(../img/a3.jpg);
+  background-image: url(../img/o3.jpg);
   grid-column: span 1;
   grid-row: span 1;
   height: 100%;
 }
 .equipment__wrap .photo:nth-child(4) {
-  background-image: url(../img/a4.jpg);
+  background-image: url(../img/o4.jpg);
   grid-column: span 1;
   grid-row: span 1;
   height: 100%;
 }
 .equipment__wrap .photo:nth-child(5) {
-  background-image: url(../img/a5.jpg);
+  background-image: url(../img/o5.jpg);
   grid-column: span 1;
   grid-row: span 1;
   height: 100%;
 }
 .equipment__wrap .photo:nth-child(6) {
-  background-image: url(../img/a6.jpg);
-  background-position: 50% 75%;
+  background-image: url(../img/o6.jpg);
+  background-position: 50% 37%;
+  background-size: cover;
   grid-column: span 2;
   grid-row: span 1;
   height: 100%;
@@ -934,6 +950,22 @@
 .hero-survey {
   max-width: 80%;
   height: 80%;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  position: relative;
+  min-height: 360px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .survey-col {
   display: flex;
@@ -944,10 +976,11 @@
 }
 .survey-col .survey__descr{
   color: #000;
+  font-size: 22px;
   font-weight: 700;
 }
 .survey-col .survey-subdescr {
-  color: #000;
+  color: #00000094;
   max-width: 80%;
   text-align: center;
 }
@@ -990,4 +1023,17 @@
 .textarea-shadow:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+.service-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+.service-btn {
+  width: 80%;
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+.description-title {
+  font-size: 20px;
+  font-weight: 700;
 }
