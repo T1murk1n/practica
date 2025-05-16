@@ -68,7 +68,7 @@
 	}
 	.atelier__wrap {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
 
 	.hero__wrap {
@@ -272,6 +272,12 @@
 		grid-column: span 1;
     	grid-row: span 1;
 	}
+	.answer-btn {
+		gap: 10px;
+	}
+	.question-title {
+		margin-bottom: 10px;
+	}
 }
 @media (max-width: 488px) {
     .wrap__row {
@@ -300,6 +306,44 @@
 		font-size: 18px;
 	}
 	.survey-col .survey-subdescr  {
+		font-size: 14px;
+	}
+	.equipment__description {
+		display: none;
+	}
+
+}
+@media (max-width: 400px) {
+	.hero__title {
+        font-size: 40px;
+    }
+	.hero__description p {
+        font-size: 16px;
+    }
+	.quiz-intro h2 {
+		font-size: 20px;
+	}
+	.highlight {
+		font-size: 16px;
+	}
+	.benefit-item {
+		font-size: 14px;
+	}
+	.feedback-survey .survey-intro h2 {
+		font-size: 40px;
+	}
+	.feedback-survey .survey-intro p {
+		font-size: 24px;
+	}
+	.question-title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.answer-btn {
+		gap: 10px;
+	}
+	.answer-btn {
+		padding: 10px;
 		font-size: 14px;
 	}
 }
