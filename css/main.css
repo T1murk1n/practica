@@ -87,31 +87,25 @@
 	overflow: hidden;
 }
 .slide:nth-child(1) {
-  background-image: url(../img/s4.JPG);
+  background-image: url(../img/sd4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(2) {
-  background-image: url(../img/s5.JPG);
+  background-image: url(../img/sd5.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(3) {
-  background-image: url(../img/s6.JPG);
+  background-image: url(../img/sd6.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(4) {
-  background-image: url(../img/s7.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 25%;
-}
-.slide:nth-child(5) {
-  background-image: url(../img/s2.JPG);
+  background-image: url(../img/sd7.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
