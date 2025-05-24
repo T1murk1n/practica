@@ -190,7 +190,7 @@
 
 /*======= reviews =======*/
 .reviews__title {
-  padding: 125px 0 56px 0;
+  padding: 125px 0 0 0;
 }
 .slider2 {
   overflow: hidden;
@@ -399,6 +399,9 @@
   color: #000 !important;
   background-color: #FFDC5D !important;
   cursor: pointer;
+}
+.area-text__content.rev {
+  margin: 0;
 }
 .service-line {
   display: flex;
