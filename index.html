@@ -28,7 +28,7 @@
                     <li class="menu__item"><a href="#equipment" class="menu__link">наше оборудование</a></li>
                     <li class="menu__item"><a href="#staff" class="menu__link">сотрудники</a></li>
                     <li class="menu__item"><a href="#works" class="menu__link">наши работы</a></li>
-                    <li class="menu__item"><a href="#reviews" class="menu__link">отзывы</a></li>
+                    <li class="menu__item"><a href="#rev2" class="menu__link">отзывы</a></li>
                   </ul>
               </nav>
               <div class="row">
@@ -75,11 +75,11 @@
             </div>
             <div class="wrap__img">
               <div class="hero-survey">
-                <form action="#" class="survey-col">
+                <form class="survey-col">
                   <p class="survey__descr">Заполните форму обратной связи прямо сейчас, и мы сделаем вашу красоту нашей заботой! </p>
-                  <input class="input-shadow" type="text" placeholder="Ваше имя">
-                  <input type="text" class="mask-phone form-control input-shadow" placeholder="Номер телефона">
-                  <textarea class="textarea-shadow" placeholder="Ваше сообщение" name="" id=""></textarea>
+                  <input name="name" class="input-shadow" type="text" placeholder="Ваше имя">
+                  <input name="phone" type="text" class="mask-phone form-control input-shadow" placeholder="Номер телефона">
+                  <textarea class="textarea-shadow" placeholder="Ваше сообщение" name="message"></textarea>
                   <button type="submit" class="menu__btn-signup menu__btn-signup-top hero-btn">Отправить</button>
                   <p class="survey-subdescr">Нажимая кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
                 </form>
@@ -398,8 +398,16 @@
               </div>
               <div class="service__content">
                 <p class="service-line">
-                  <span class="description">-</span>
-                  <span class="price">Р</span>
+                  <span class="description">Окрашивание бровей/ресниц</span>
+                  <span class="price">900Р</span>
+                </p>
+                <p class="service-line">
+                  <span class="description">Ламинирование бровей</span>
+                  <span class="price">2000Р</span>
+                </p>
+                <p class="service-line">
+                  <span class="description">Архитектура бровей + окрашивание</span>
+                  <span class="price">1500Р</span>
                 </p>
                 <div class="service-btn-wrap">
                   <button class="menu__btn-signup area-text__content service-btn">Записаться на брови</button>
@@ -415,8 +423,12 @@
               </div>
               <div class="service__content">
                 <p class="service-line">
-                  <span class="description">-</span>
-                  <span class="price">Р</span>
+                  <span class="description">Окрашивание бровей/ресниц</span>
+                  <span class="price">900Р</span>
+                </p>
+                <p class="service-line">
+                  <span class="description">Ламинирование ресниц</span>
+                  <span class="price">2700Р</span>
                 </p>
                 <div class="service-btn-wrap">
                   <button class="menu__btn-signup area-text__content service-btn">Записаться на ресницы</button>
@@ -543,7 +555,7 @@
       </div>
   </section>
       
-    <section class="reviews" id="reviews">
+    <!-- <section class="reviews" id="reviews">
       <div class="reviews__container">
           <h2 class="reviews__title title">// отзывы</h2>
           <div class="slider2">
@@ -596,10 +608,144 @@
               <button class="menu__btn-signup area-text__content">Подарить себе заботу</button>
             </div>
   </section>
-      
+       -->
+
+
+  <section class="rev2" id="rev2">
+    <div class="rev2__container">
+      <h2 class="reviews__title title">// отзывы</h2>
+          <div class="slider2">
+            <div class="slider__track_2">
+
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Avatar">
+                  </div>
+                  <div class="user-info">
+                    <div class="username">Татьяна З.</div>
+                    <div class="date">31 января</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ★★★★★
+                </div>
+                <div class="review-text">
+                  Сегоня была в студии на массаже у Дины. Все очень понравилось, отдохнула и омолодилась!
+Красивая и уютная студия, вежливые и профессиональные сотруднки, дружелюбная и приятная атмосфера. Спасибо за ваш труд!
+Точно рекомендую!
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Avatar">
+                  </div>
+                  <div class="user-info">
+                    <div class="username">Дарья Щ.</div>
+                    <div class="date">6 марта</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ★★★★★
+                </div>
+                <div class="review-text">
+                  Прекрасное место. Очень уютненько и атмосферно!) Замечательный и приветливый персонал! Делала первый раз лазерную эпиляцию, Мастер Светлана все подробно объяснила как будет проводится процедура и какой уход после) я довольна всем!)
+                </div>
+              </div>
+
+              
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Avatar">
+                  </div>
+                  <div class="user-info">
+                    <div class="username">Надеждина Е.</div>
+                    <div class="date">6 мая</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ★★★★★
+                </div>
+                <div class="review-text">
+                 Прекрасное место. Впервые была на лазерной эпиляции, шла со страхом ( особенно касается глубокого бикини). У меня был мастер Анастасия,прекрасная девушка, все обьяснила, рассказала, во время процедуры всегда спрашивала по ощущениям. Все мое стеснение и боязнь покинули меня))). Вообщем я очень довольна что нашла это место и замечательного мастера. Обязательно вернусь ))) 🙏 Спасибо!
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Avatar">
+                  </div>
+                  <div class="user-info">
+                    <div class="username">Евгения П.</div>
+                    <div class="date">31 марта</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ★★★★★
+                </div>
+                <div class="review-text">
+                 Делали дочке подростку депиляцию воском, бикини и подмышки. Все прошло быстро и качественно) после напоили чаем с вкусняшками ☺️Дочка на следующий день чувствует себя комфортно.
+Сама студия симпатичная, удобное расположение. Но по вечерам трудновато с парковкой.
+Спасибо! Нам все понравилось🩷
+                </div>
+              </div>
 
 
 
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Avatar">
+                  </div>
+                  <div class="user-info">
+                    <div class="username">Александра Титова</div>
+                    <div class="date">15 марта</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ★★★★★
+                </div>
+                <div class="review-text">
+                 Прекрасный салон! Уютно, чистенько, в шаговой доступности от дома) Посещаю салон ежемесячно, цены приемлемые, эпиляция восковая проходит безболезненно 👍 рекомендую ❤️
+                </div>
+              </div>
+
+
+              <div class="review-card">
+                <div class="review-header">
+                  <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Avatar">
+                  </div>
+                  <div class="user-info">
+                    <div class="username">Людмила</div>
+                    <div class="date">28 апреля</div>
+                  </div>
+                </div>
+                <div class="review-rating">
+                  ★★★★★
+                </div>
+                <div class="review-text">
+                 Очень уютный салон с комплексом услуг рядом с домом. Была на процедуре лазерной эпиляции 25.04.2025. Мастер профессионал своего дела, в ходе процедуры уточнял ощущения и самочувствие. Само помещение салона очень уютное с прекрасным панорамным видом.
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="slider__controls">
+              <button class="slider__btn prev2">←</button>
+              <button class="slider__btn next2">→</button>
+            </div>
+            <div class="wrap-services-area">
+              <button class="menu__btn-signup area-text__content">Подарить себе заботу</button>
+            </div>
+    </div>
+  </section>
 
 
   <section class="feedback-survey">
@@ -632,30 +778,32 @@
                 <div class="footer__column">
                   <h4>Навигация</h4>
                   <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Сотрудники</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="javascript:void(0);">главная</a></li>
+                    <li><a href="#services">услуги</a></li>
+                    <li><a href="#atelier">наша студия</a></li>
+                    <li><a href="#equipment">наше оборудование</a></li>
+                    <li><a href="#staff">сотрудники</a></li>
+                    <li><a href="#works">наши работы</a></li>
+                    <li><a href="#rev2">отзывы</a></li>
                   </ul>
                 </div>
             
                 <div class="footer__column">
                   <h4>Телефон</h4>
-                  <p>+7 (123) 456 78-91</p>
-                  <h4 style="padding-top: 15px;">E-mail</h4>
-                  <p>example@site.com</p>
-                  <h4 style="padding-top: 15px;">Адреса</h4>
-                  <p>Москва, Ленина 47</p>
-                  <p>Москва, Ленина 12</p>
+                  <p>+7 (967) 814-47-61</p>
+                  <h4 style="padding-top: 15px;">Время работы</h4>
+                  <p>Открыто до 22:00</p>
+                  <h4 style="padding-top: 15px;">Адрес</h4>
+                  <p>д. Рузино, микрорайон Кутузовский, 1, корп. 1</p>
                 </div>
             
-                <div class="footer__column">
+                <!-- <div class="footer__column">
                   <h4>Подпишитесь на новости</h4>
                   <form class="footer__form">
                     <input type="email" placeholder="E-mail" />
                     <button type="submit">Отправить</button>
                   </form>
-                </div>
+                </div> -->
               </div>
             
               <div class="footer__bottom">

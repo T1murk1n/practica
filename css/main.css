@@ -45,7 +45,7 @@
   width: 100%;
 }
 .hero {
-  margin-top: 210px;
+  margin-top: 150px;
 }
 .hero__description {
   font-family: Rubik;
@@ -199,15 +199,16 @@
   display: flex;
   transition: transform 0.5s ease;
   gap: 30px;
+    align-items: flex-start;
 }
-.review-card {
+/* .review-card {
   background: #f2f2f2;
   border-radius: 8px;
   padding: 20px;
   min-width: calc((100% - 30px) / 2);
   box-sizing: border-box;
   border: 2px solid transparent;
-}
+} */
 .review-card__content {
   display: flex;
   gap: 20px;
@@ -249,6 +250,57 @@
   align-self: start;
 }
 /*=====================*/
+
+
+.review-card {
+  min-width: 300px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  height: auto;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+  color: #888;
+}
+
+.review-rating {
+  color: #ffc107; /* Звёзды */
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
 
 /*======= services =======*/
 .services {
@@ -546,7 +598,7 @@
   height: 458px;
 }
 .row {
-  padding: 23px 0;
+  /* padding: 23px 0; */
   display: flex;
   gap: 44px;
 }
@@ -885,6 +937,9 @@
 .quiz-result {
   text-align: center;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .quiz-result.active {
@@ -1030,4 +1085,31 @@
 .description-title {
   font-size: 20px;
   font-weight: 700;
+}
+#lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+#lead-form input,
+#lead-form button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#lead-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-status {
+  margin-top: 10px;
+  font-size: 14px;
 }

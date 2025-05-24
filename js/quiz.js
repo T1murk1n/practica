@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   
       function calculateDiscount() {
-        const discounts = [5, 7, 10, 12, 15];
+        const discounts = [5, 7, 10, 12];
         return discounts[Math.floor(Math.random() * discounts.length)];
       }
   
@@ -311,27 +311,103 @@ document.addEventListener('DOMContentLoaded', function() {
         text.textContent = `Вы получаете скидку ${discount}% на следующую покупку!`;
         resultDiv.appendChild(text);
         
-        const code = document.createElement('div');
-        code.className = 'discount-code';
-        code.textContent = discountCode;
-        resultDiv.appendChild(code);
+        // const code = document.createElement('div');
+        // code.className = 'discount-code';
+        // code.textContent = discountCode;
+        // resultDiv.appendChild(code);
         
-        const info = document.createElement('p');
-        info.className = 'result-text';
-        info.textContent = 'Используйте этот промокод при оформлении заказа.';
-        resultDiv.appendChild(info);
+        // const info = document.createElement('p');
+        // info.className = 'result-text';
+        // info.textContent = 'Используйте этот промокод при оформлении заказа.';
+        // resultDiv.appendChild(info);
+
+        // Форма вместо промокода
+          const form = document.createElement('form');
+          form.id = 'lead-form';
+          form.innerHTML = `
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <button type="submit">Отправить</button>
+            <p class="form-status">вапв</p>
+          `;
+          resultDiv.appendChild(form);
+
+          // Обработчик формы
+          // form.addEventListener('submit', function(e) {
+          //   e.preventDefault();
+
+          //   const name = form.name.value.trim();
+          //   const phone = form.phone.value.trim();
+          //   const status = form.querySelector('.form-status');
+
+          //   if (!name || !phone) {
+          //     status.textContent = 'Пожалуйста, заполните оба поля.';
+          //     status.style.color = 'red';
+          //     return;
+          //   }
+
+          //   // Здесь будет отправка в Telegram
+          //   console.log('Отправка данных:', { name, phone });
+
+          //   status.textContent = 'Спасибо! Мы свяжемся с вами.';
+          //   status.style.color = 'green';
+          //   form.reset();
+          // });
+
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = form.name.value.trim();
+            const phone = form.phone.value.trim();
+            const status = form.querySelector('.form-status');
+
+            if (!name || !phone) {
+              status.textContent = 'Пожалуйста, заполните оба поля.';
+              status.style.color = 'red';
+              return;
+            }
+
+            // ✅ ОТПРАВКА В TELEGRAM
+            fetch(`https://api.telegram.org/bot7944263284:AAHUvq6DupvS_z7-VEGRN9ckOlJW-4uBDiY/sendMessage`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                chat_id: '1241297240',
+                text: `Новая заявка\nИмя: ${name}\nТелефон: ${phone}\nСкидка: ${discount}%`
+              })
+            })
+            .then(response => {
+              if (response.ok) {
+                status.textContent = 'Спасибо! Мы свяжемся с вами.';
+                status.style.color = 'green';
+                form.reset();
+              } else {
+                status.textContent = 'Ошибка отправки. Попробуйте позже.';
+                status.style.color = 'red';
+              }
+            })
+            .catch(error => {
+              status.textContent = 'Ошибка сети.';
+              status.style.color = 'red';
+              console.error('Telegram error:', error);
+            });
+          });
+
+
         
-        const timerText = document.createElement('div');
-        timerText.className = 'timer';
-        resultDiv.appendChild(timerText);
+        // const timerText = document.createElement('div');
+        // timerText.className = 'timer';
+        // resultDiv.appendChild(timerText);
         
-        const useBtn = document.createElement('button');
-        useBtn.className = 'use-discount-btn';
-        useBtn.textContent = 'Перейти к покупкам';
-        useBtn.addEventListener('click', () => {
-          alert(`Промокод ${discountCode} на скидку ${discount}% скопирован!`);
-        });
-        resultDiv.appendChild(useBtn);
+        // const useBtn = document.createElement('button');
+        // useBtn.className = 'use-discount-btn';
+        // useBtn.textContent = 'Перейти к покупкам';
+        // useBtn.addEventListener('click', () => {
+        //   alert(`Промокод ${discountCode} на скидку ${discount}% скопирован!`);
+        // });
+        // resultDiv.appendChild(useBtn);
         
         quizWrapper.appendChild(resultDiv);
         
