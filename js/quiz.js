@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <input type="text" name="name" placeholder="Ваше имя" required>
             <input type="tel" name="phone" placeholder="Ваш телефон" required>
             <button type="submit">Отправить</button>
-            <p class="form-status">вапв</p>
+            <p class="form-status"></p>
           `;
           resultDiv.appendChild(form);
 

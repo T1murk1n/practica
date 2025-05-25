@@ -97,7 +97,7 @@ header .menu__link:hover {
   text-align: center;
 }
 .menu__btn-signup:hover {
-  background-color: #000;
+  background-color: #384E41;
   color: #fff;
 }
 .menu__list-sub {
@@ -318,9 +318,21 @@ cursor: pointer;
   top: 100%;
   right: 0%;
   width: 35%;
-  min-height: 80vh;
-  background-color: rgba(143, 168, 136, 0.5);
+  min-height: 90vh;
+  backdrop-filter: blur(5px);  
+  background-color: rgba(143, 168, 136, 0.72);
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu__bottom-info {
+  color: #fff;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.menu__bottom-info a{
+  color: #fff;
 }
 .menu__body._active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -333,7 +345,7 @@ cursor: pointer;
 .menu__body .menu__link {
   display: block;
   width: 100%;
-  text-align: center;
+  position: relative;
 }
 .menu__body .menu__item {
   display: block;
@@ -345,6 +357,8 @@ cursor: pointer;
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family: Rubik;
+  color: #FDFFF5;
 }
 .header__menu .row .footer__column p img{
   width: 24px;
@@ -365,4 +379,36 @@ button, a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 25% 50%;
+}
+.menu__link::before {
+  content: '';
+  position: absolute;
+  left: -12%;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.menu__item:nth-child(1) .menu__link::before {
+  background-image: url(../img/icons/home.png);
+}
+.menu__item:nth-child(2) .menu__link::before {
+  background-image: url(../img/icons/heart.png);
+}
+.menu__item:nth-child(3) .menu__link::before {
+  background-image: url(../img/icons/inst.png);
+}
+.menu__item:nth-child(4) .menu__link::before {
+  background-image: url(../img/icons/inst.png);
+}
+.menu__item:nth-child(5) .menu__link::before {
+  background-image: url(../img/icons/people.png);
+}
+.menu__item:nth-child(6) .menu__link::before {
+  background-image: url(../img/icons/inst.png);
+}
+.menu__item:nth-child(7) .menu__link::before {
+  background-image: url(../img/icons/mail.png);
 }

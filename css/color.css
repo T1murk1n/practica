@@ -9,14 +9,10 @@ body {
     color: #7B956B;
 }
 .menu__btn-signup {
-    color: #FFFFFF;
+    color: #384E41;
     border: none;
-    background-color: #849F7A;
-}
-.menu__btn-signup:hover {
-    color: #FFFFFF;
-    border: none;
-    background-color: #849F7A;
+    background-color: #FFDC5D;
+    border-radius: 12px;
 }
 .discount-quiz {
     background-color: #FDFFF5;
@@ -27,19 +23,28 @@ body {
 /* .feedback-survey {
     background-color: #FDFFF5;
 } */
-
-.menu__btn-signup-top {
-    color: #000;
-    border-radius: 12px;
+.menu__btn-signup.menu__btn-signup-top.r {
     background-color: #FFDC5D;
+    color: #384E41;
+    font-family: Rubik !important;
+}
+.menu__btn-signup.menu__btn-signup-top.r:hover {
+    background-color: #384E41;
+    color: #fff;
+}
+.menu__btn-signup-top {
+    color: #fff;
+    border-radius: 12px;
+    background-color: #849F7A;
     box-shadow: 0px 4px 12px rgba(132, 159, 122, 0.1);
 }
 .menu__btn-signup-top:hover {
     color: #FFFFFF;
     border: none;
-    background-color: #849F7A;
+    background-color: #384E41;
 }
 .menu__btn-detailed {
+    border-radius: 12px;
     background-color: transparent;
     color: #7B956B;
     border-color: #7B956B;
@@ -52,10 +57,15 @@ body {
 header{
     background-color: #8FA888;
     color: #fff !important;
+    font-family: UNCAGE;
 }
 .menu__link {
     color: #fff !important;
+    font-size: 40px;
+    text-align: left;
 }
+
+
 
 .staff {
     background-color: #FDFFF5;
@@ -191,7 +201,8 @@ header{
 }
 
 .slide:hover .plash {
-    background-color: #6a6a6aa1;
+    background-color: #6a6a6a69;
+  backdrop-filter: blur(5px);
 }
 .service__header {
     cursor: pointer;

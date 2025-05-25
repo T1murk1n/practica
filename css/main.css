@@ -93,32 +93,32 @@
   background-position: 50% 25%;
 }
 .slide:nth-child(2) {
-  background-image: url(../img/sd5.JPG);
+  background-image: url(../img/sd5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(3) {
-  background-image: url(../img/sd6.JPG);
+  background-image: url(../img/sd6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide:nth-child(4) {
-  background-image: url(../img/sd7.JPG);
+  background-image: url(../img/sd7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 25%;
 }
 .slide span:first-child{
   position: absolute;
-  bottom: 35%;
+  bottom: 37%;
   right: 50%;
   transform: translateX(50%);
   z-index: 150;
   color: transparent;
   transition: all 0.5s ease;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 500;
 }
 .menu__btn-signup.staff-btn {
@@ -132,9 +132,14 @@
 }
 .slide:hover .staff-btn {
   background-color: #FFDC5D;
-  color: #000;
+  color: #384E41;
+}
+.abr {
+  bottom: 28% !important;
+  text-align: center;
 }
 .slide span:last-child{
+  width: 90%;
   position: absolute;
   bottom: 18%;
   right: 50%;
@@ -143,7 +148,7 @@
   z-index: 150;
   color: transparent;
   transition: all 0.5s ease;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
 }
 .slide:hover span{
@@ -396,7 +401,7 @@
   padding: 25px;
   font-weight: 500;
   margin: 50px 0;
-  color: #000 !important;
+  color: #384E41 !important;
   background-color: #FFDC5D !important;
   cursor: pointer;
 }
@@ -793,7 +798,8 @@
 }
 
 .quiz-wrapper {
-  background: rgba(255, 255, 255, 0.25);
+  /* background: rgba(255, 255, 255, 0.25); */
+  background-color: #FDFFF5;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
@@ -906,7 +912,7 @@
 .start-quiz-btn, .use-discount-btn {
   padding: 16px 40px;
   background: #FFDC5D;
-  color: #2c3e50;
+  color: #384E41;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -1027,7 +1033,7 @@
   font-family: Rubik;
 }
 .survey-col .survey__descr{
-  color: #000;
+  color: #384E41;
   font-size: 22px;
   font-weight: 700;
 }
@@ -1041,12 +1047,14 @@
   flex: 1 1 auto;
   width: 100%;
   min-height: 115px;
+  background-color: #FDFFF5;
 }
 .survey-col button.menu__btn-signup.menu__btn-signup-top {
   font-weight: 200;
   width: 100%;
 }
 .input-shadow {
+  background-color: #FDFFF5;
   width: 100%;
   padding: 10px 15px;
   font-size: 16px;
