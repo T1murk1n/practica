@@ -353,14 +353,14 @@ cursor: pointer;
   text-align: center;
 }
 
-.header__menu .row .footer__column p {
+.header__menu .row .footer__column a {
   display: flex;
   align-items: center;
   gap: 4px;
   font-family: Rubik;
   color: #FDFFF5;
 }
-.header__menu .row .footer__column p img{
+.header__menu .row .footer__column a img{
   width: 24px;
   height: 24px;
 }

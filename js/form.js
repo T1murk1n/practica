@@ -21,12 +21,12 @@
               },
               body: JSON.stringify({
                 chat_id: '1241297240',
-                text: `Новая заявка обратной связи\nИмя: ${name}\nТелефон: ${phone}\nСообщение: ${message}%`
+                text: `Новая заявка обратной связи\nИмя: ${name}\nТелефон: ${phone}\nСообщение: ${message}`
               })
             })
             .then(response => {
               if (response.ok) {
-
+                form_hero.reset()
               } else {
                 
               }
